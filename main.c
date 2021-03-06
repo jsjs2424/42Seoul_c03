@@ -51,4 +51,10 @@ int main(void)
 	a = ft_strlcat(str, str2, 12);
 	printf("%s\nreturn = %d\n", str, a);
 
+	printf("%s %s %d\n", str, str2, 3);
+	a = ft_strlcat(str, str2, 3);
+	printf("%s\nreturn = %d\n", str, a);
+	printf("%s %s %d\n", str, str2, 0);
+	a = ft_strlcat(str, str2, 0);
+	printf("%s\nreturn = %d\n", str, a);
 }
