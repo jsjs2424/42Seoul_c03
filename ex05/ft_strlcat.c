@@ -6,7 +6,7 @@
 /*   By: jiskim <jiskim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 19:04:47 by jiskim            #+#    #+#             */
-/*   Updated: 2021/03/06 23:33:52 by jiskim           ###   ########.fr       */
+/*   Updated: 2021/03/08 13:49:29 by jiskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	i = dlen;
 	while (*dest)
 		dest++;
+	if (!size)
+		return (slen);
 	while (*src && i < size - 1)
 	{
 		*dest++ = *src++;
