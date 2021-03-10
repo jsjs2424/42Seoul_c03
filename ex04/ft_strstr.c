@@ -6,7 +6,7 @@
 /*   By: jiskim <jiskim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 18:20:09 by jiskim            #+#    #+#             */
-/*   Updated: 2021/03/02 19:01:20 by jiskim           ###   ########.fr       */
+/*   Updated: 2021/03/11 00:39:47 by jiskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int		is_in_str(char *str, char *to_find)
 
 char	*ft_strstr(char *str, char *to_find)
 {
+	if (!*to_find)
+		return (str);
 	while (*str)
 	{
 		if (*str == *to_find)
