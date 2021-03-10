@@ -41,6 +41,7 @@ int main(void)
 	char str2[] = "cde";
 	printf("%s %s\n%s\n", str, str2, ft_strstr(str, str2));
 	printf("%s %s\n%s\n", str, s2, ft_strstr(str, s2));
+	printf("%s %s(NULL)\n%s\n", str, "", ft_strstr(str, ""));
 
 	printf("\n============%d===================\n", 5);
 	printf("%s %s %d\n", str, str2, 8);
